@@ -364,7 +364,7 @@ const CreateListing = () => {
                         className="flex flex-col justify-center items-center"
                         htmlFor="image"
                       >
-                        <div className="flex">
+                        <div className="flex cursor-pointer">
                           <IoImages size={50} />
                         </div>
                         <p>Upload your photos</p>
@@ -389,31 +389,6 @@ const CreateListing = () => {
                               <BiTrash size={20} color="red" />
                             </button>
                           </div>
-
-                          //   <Draggable
-                          //     key={index}
-                          //     draggableId={index.toString()}
-                          //     index={index}
-                          //   >
-                          //     {(provided) => {
-                          //       <div
-                          //         ref={provided.innerRef}
-                          //         {...provided.draggableProps}
-                          //         {...provided.dragHandleProps}
-                          //       >
-                          //         <img
-                          //           src={URL.createObjectURL(photo)}
-                          //           alt="place"
-                          //         />
-                          //         <button
-                          //           type="button"
-                          //           onClick={() => handleRemovePhotos(index)}
-                          //         >
-                          //           <BiTrash />
-                          //         </button>
-                          //       </div>;
-                          //     }}
-                          //   </Draggable>
                         );
                       })}
 

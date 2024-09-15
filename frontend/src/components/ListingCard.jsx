@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { MdNavigateNext, MdNavigateBefore } from "react-icons/md";
-import Loader from "./Loader";
-import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
 import { setWishList } from "../../redux/state";
@@ -54,8 +52,6 @@ const ListingCard = ({
   console.log(user);
      
   
- 
-  // console.log(isLiked);
 
   return (
     <div className="">

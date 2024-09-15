@@ -40,24 +40,7 @@ router.get("/:userId/reservation-list", async (req, res) => {
     });
   }
 });
-router.get("/:userId/reservation-list", async (req, res) => {
-  try {
-    const { userId } = req.params;
-    const reservations = await Bookings.find({ hostId: userId }).populate(
-      "customerId hostId listingId"
-    );
-    res.status(200).json({
-      message: "reservations retrieved successfully",
-      reservations,
-    });
-  } catch (err) {
-    console.log(err);
-    res.status(404).json({
-      message: "cannot retrieve reservations",
-      err,
-    });
-  }
-});
+
 router.get("/:userId/property-list", async (req, res) => {
   try {
     const { userId } = req.params;

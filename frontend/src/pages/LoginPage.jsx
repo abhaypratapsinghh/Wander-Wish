@@ -70,7 +70,7 @@ const LoginPage = () => {
           </button>
         </form>
         <a className="m-2 text-center text-sm text-white" href="/register">
-          Already have a account?Register here
+          Don't have a account?Register here
         </a>
       </div>
     </div>
